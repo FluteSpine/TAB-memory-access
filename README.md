@@ -1,4 +1,4 @@
-# TAB-memory-access
+# TAB memory access
 Meme tool.   
 Up to you if you want to trust this stuff. Might crash or display some weird stuff on non english version of the game. Mayor effects are editable through tab_mayors.json file.
 
