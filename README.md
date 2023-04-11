@@ -1,3 +1,6 @@
+#Disclaimer
+Honestly all of this is garbage and mostly unfinished. Just posting this as a proof of no viruses or me actually changing the game.
+
 # TAB memory access
 Meme tool.   
 Up to you if you want to trust this stuff. Might crash or display some weird stuff on non english version of the game. Mayor effects are editable through tab_mayors.json file.
