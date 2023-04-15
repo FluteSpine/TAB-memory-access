@@ -5,6 +5,8 @@ Honestly all of this is garbage and mostly unfinished. Just posting this as a pr
 Meme tool.   
 Up to you if you want to trust this stuff. Might crash or display some weird stuff on non english version of the game. Mayor effects are editable through tab_mayors.json file.
 
+Launch this after the opening the game.
+
 + Adds mayors to text file (filename.txt in the same folder)
 + Renames soldier to Bob and edits his description
 + Changes radar name
