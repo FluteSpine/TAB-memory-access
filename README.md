@@ -22,7 +22,7 @@ If you want to try keybind modification: dismiss all units and keybinds in subme
 Has some random addresses used throughout the creation of the tool and somewhat deciphered structures. If data is incomprehensible due to being empty while i tested, it might require recreation.
 
 # TO-DO list
-Stop renaming Radar Tower to dumb name.
-Look at random crashes for keybind, i dont understand reasons behind it and it's a rare occurence.
-Check amount of available (reachable) tiles on the map, steal technology from Daneel.
-One day I'll look into instant restart.
++ Stop renaming Radar Tower to dumb name.
++ Look at random crashes for keybind, i dont understand reasons behind it and it's a rare occurence.
++ Check amount of available (reachable) tiles on the map, steal technology from Daneel.
++ One day I'll look into instant restart.
