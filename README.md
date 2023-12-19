@@ -26,3 +26,4 @@ Has some random addresses used throughout the creation of the tool and somewhat 
 + Look at random crashes for keybind, i dont understand reasons behind it and it's a rare occurence.
 + Check amount of available (reachable) tiles on the map, steal technology from Daneel.
 + One day I'll look into instant restart.
++ Make all of this a loop to allow starting program whenever and restarting after.
