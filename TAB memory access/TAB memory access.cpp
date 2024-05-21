@@ -54,7 +54,7 @@ int main()
 	//it's just look for it, if 0 sleep N seconds, do again
 	if (process_ID == 0 || handle_process == INVALID_HANDLE_VALUE)
 	{
-		std::cout << "\nGame is not open, too lazy to wait for it atm\n";
+		std::cout << "\nGame is not open, I'm too lazy to allow waiting for game\n";
 		return 0;
 	}
 
@@ -69,6 +69,7 @@ int main()
 	bool need_readdress = true;
 
 	bool is_bob_renamed = false;
+	//also not used, cuz name is confusing
 	bool is_radar_renamed = false;
 	//currently not used
 	bool if_calculating_score = false;
@@ -191,23 +192,25 @@ int main()
 					}
 				}
 			}
-
-			if (is_radar_renamed == false)
-			{
+			
+			//initally assumed with it changing name on the map when u click it
+			//i forgor it also changed mayor, which makes this undesirable
+			//if (is_radar_renamed == false)
+			//{
 				//dont know why i went with actual name instead of programmed name of RadarTower
 				//but i dont feel like changing it
 				//at least it doesnt trigger on non english clients resulting in potential crash
-				wchar_t radar_default_name[256];
-				wchar_t new_radar_name[12] = L"DontYouDare";
-
-				uintptr_t radar_default_name_addr = FindDMAAddy(handle_process, LevelState, {0xD0, 0x38, 0x20, 0x8, 0x30, 0x8, 0x178, 0x58, 0x148, 0x18, 0xC});
-				ReadProcessMemory(handle_process, (BYTE*)radar_default_name_addr, &radar_default_name, sizeof(radar_default_name), nullptr);
-				if (!wcscmp(radar_default_name, L"Radar Tower"))
-				{
-					WriteProcessMemory(handle_process, (BYTE*)radar_default_name_addr, &new_radar_name, sizeof(new_radar_name), nullptr);
-					is_radar_renamed = true;
-				}
-			}
+			//	wchar_t radar_default_name[256];
+			//	wchar_t new_radar_name[12] = L"DontYouDare";
+			//
+			//	uintptr_t radar_default_name_addr = FindDMAAddy(handle_process, LevelState, {0xD0, 0x38, 0x20, 0x8, 0x30, 0x8, 0x178, 0x58, 0x148, 0x18, 0xC});
+			//	ReadProcessMemory(handle_process, (BYTE*)radar_default_name_addr, &radar_default_name, sizeof(radar_default_name), nullptr);
+			//	if (!wcscmp(radar_default_name, L"Radar Tower"))
+			//	{
+			//		WriteProcessMemory(handle_process, (BYTE*)radar_default_name_addr, &new_radar_name, sizeof(new_radar_name), nullptr);
+			//		is_radar_renamed = true;
+			//	}
+			//}
 
 			if (if_calculating_score)
 			{
