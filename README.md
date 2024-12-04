@@ -27,3 +27,4 @@ Has some random addresses used throughout the creation of the tool and somewhat 
 + Check amount of available (reachable) tiles on the map, steal technology from Daneel.
 + One day I'll look into instant restart.
 + Make all of this a loop to allow starting program whenever and restarting after.
++ Automatically show hp for units only, maybe there's some kind of flag to show hp?
